@@ -1,8 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    border-radius: 15px ;
     box-sizing: border-box;
+    border-radius: 15px;
   }
   body {
     display: flex;
@@ -11,26 +11,27 @@
     background-color: #f0eae4;
     /* background-image: url(../src/images/background1.jpg); */
   }
-  body > div {
-    margin: 5% auto 0;
-    max-width: 700px;
+  body > div.content {
+    margin: 5% auto 5%;
+    max-width: 900px;
   }
   .header {
       display: inline-block;
       font-size: 35px;
       text-align: center;
-      background-color: rgba(248, 7, 128, 0.05);
+      background-image: url(../src/images/trip2.jpg);
+      /* background-color: rgba(248, 7, 128, 0.05); */
+      background-size: 100%;
+      background-repeat: no-repeat;
       transition: all 0.5s linear;
-      max-width: 900px;
-      color: grey;
+      width: 100%;
+      height: 400px;
+      color: white;
   }
   .header:hover{
       color: #c23564;
   }
 
-  .content{
-    margin: 5% auto 5%;
-  }
   .tabs {
     display: flex;
     position: relative;
@@ -46,17 +47,17 @@
     transition: all 0.2s ease;
   }
   .tab-item {
-    min-width: 80px;
-    padding: 16px 20px 11px 20px;
-    font-size: 20px;
+    min-width: 90px;
+    padding: 16px 40px 11px 40px;
+    font-size: 24px;
     text-align: center;
     color: #c23564;
     background-color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border-bottom: 5px solid transparent;
+    border-bottom: 10px solid transparent;
     opacity: 0.6;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -86,19 +87,21 @@
     display: block;
     margin-top: 10px;
     background-color:rgba(248, 7, 128, 0.05);
-    max-width: 675px;
+    max-width: 900px;
   }
   .tab-pane h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 8px;
   }
   .buImage {
     width: 90%;
     position: relative;
-    margin-left: 30px;
+    margin: 10px 0 15px 40px;
+    
   }
   .Image {
     width: 95%;
     position: relative;
-    margin-left:20px;
+    margin: 10px 0px 15px 20px;
+   
   }
